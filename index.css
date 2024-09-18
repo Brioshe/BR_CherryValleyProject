@@ -7,12 +7,13 @@ html, body {
 
 body {
     background-color: black;
+    
 }
 
 .grid-container {
     display: grid;
-    grid-template-columns: 25% auto 25%;
-    grid-template-rows: 100% 100% 10%;
+    grid-template-columns: auto 900px auto;
+    grid-template-rows: 100% auto 10%;
     height: 100vh;
 }
 
@@ -21,35 +22,44 @@ body {
 }
 
 .stuckheader {
-    background-color: rgba(255, 255, 255, 0.678);
+    background-color:rgba(42, 85, 52, 0.685);
     padding:0;
     overflow:hidden;
     position:fixed;
     top:0;
     left:0;
     width:100%;
-    height:10%;
+    height:7%;
     z-index: 99;
 }
 
 .topnav {
-    background-color:white;
     overflow:hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .topnav a {
-    float:left;
-    color: gray;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 600;
+    padding:20px;
     font-size:17px;
+    text-decoration: none;
+    margin:10px;
+}
+
+.topnav a:hover {
+    background-color: rgba(0, 0, 0, 0.562);
 }
 
 .topnav img {
     height: 100%;
     width: auto;
     float:left;
+    outline: 5px solid green;
+    margin-right: 20px;
 } 
 
 /*- Fonts -*/
@@ -72,22 +82,45 @@ body {
 .slogantext {
     font-family:AmaticSC;
     color:white;
-    font-size:70px;
+    font-size:100px;
     text-align: center;
     text-shadow: black 3px 3px 5px;
 }
 
 .gridbody {
-    background-color: white;
     grid-row:2;
     grid-column:2;
     margin-top: 5px;
+    z-index: 10;
+}
+
+.gridbody h1,h2,h3,h4 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    font-weight: 400;
+}
+
+.gridbody p,span,ul,hr,pre {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    font-weight: lighter;
+    font-size:21px;
+}
+
+.gridbodybg {
+    background-color:rgba(42, 85, 52, 0.685);
+    grid-row:2;
+    grid-column-start:1;
+    grid-column-end:4;
+    margin-top: 5px;
+    z-index: 9;
 }
 
 .gridfooter {
     background-color: white;
     grid-row:3;
-    grid-column:2;
+    grid-column-start:1;
+    grid-column-end:4;
     margin-top: 5px;
 }
 
