@@ -1,11 +1,63 @@
-/* footer.css */
+/* Ribbon Footer Styles */
+.footer-ribbon {
+    background-color: #333; /* Dark background color */
+    color: white; /* Text color */
+    position: fixed; /* Sticks to the bottom of the page */
+    bottom: 0; /* Aligns footer to the bottom edge */
+    left: 0; /* Aligns to the left edge */
+    width: 100%; /* Full-width ribbon */
+    padding: 10px 0; /* Vertical spacing inside the footer */
+    z-index: 9999; /* Ensures it stays above other elements */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
 
-footer {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+/* Footer Content Wrapper */
+.footer-content {
+    display: flex; /* Enables flexbox layout */
+    justify-content: space-between; /* Distributes items with space between */
+    align-items: center; /* Aligns content vertically */
+    padding: 0 15px; /* Adds padding for spacing around the content */
+    font-family: Arial, sans-serif; /* Consistent font style */
+    font-size: 1em; /* Standard font size */
+}
+
+/* Copyright Text */
+.footer-copyright {
+    font-size: 0.9em; /* Slightly smaller text */
+}
+
+/* Footer Links and Icons */
+.footer-social {
+    display: flex; /* Aligns social media icons in a row */
+    gap: 15px; /* Spacing between icons */
+}
+
+/* Footer Link Styling */
+.footer-link {
+    display: inline-flex; /* Allows for centering icon inside link */
+    justify-content: center;
+    align-items: center;
+    width: 40px; /* Square size */
+    height: 40px; /* Square size */
+    background-color: #555; /* Background color for icons */
+    border-radius: 8px; /* Rounded corners */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.footer-link:hover {
+    background-color: #f0a500; /* Hover color */
+    transform: scale(1.1); /* Slight scaling effect on hover */
+}
+
+/* FontAwesome Icon Styling */
+.footer-social i {
+    color: white; /* White icon color by default */
+    font-size: 1.5em; /* Size of the icons */
+}
+
+/* Optional Text or Branding in the Footer */
+.footer-ribbon span {
+    margin-right: 10px; /* Space between the span and links */
+    font-size: 1.1em; /* Slightly larger font size for branding/text */
+    font-weight: bold; /* Emphasized text */
 }
