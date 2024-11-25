@@ -1,0 +1,150 @@
+/* Basic styling for the body and page */
+body {
+    background-image: url("https://lh3.googleusercontent.com/pw/AP1GczNoQpv0rUiSL6OVyFROsGkYlvJkteh7_jN6yX7Q5FPxiLI9ev-qDdLkeihRDLoKBNdUUnIGyM3-1-QTs58PVgOsbsD2LUwhlQQT4esqZAbKtuTcnHBGfeHcNQEv_aSZLaLqdr_WSwcMLUWoI38y8Cf3lQ=w1470-h827-s-no-gm?authuser=0");
+    background-size: 100% auto; /* Fit width and maintain the original aspect ratio for height */
+    background-position: center; /* Center the background */
+    background-repeat: no-repeat; /* Prevent repeating the background image */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align content to the top */
+    align-items: center; /* Center horizontally */
+    color: white; /* Text color */
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+}
+
+/* Styling for the top navigation bar */
+.stuckheader {
+    background-color: rgba(42, 85, 52, 0.685);
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+.topnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.topnav a {
+    color: white;
+    padding: 15px;
+    font-size: 17px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.topnav a:hover {
+    background-color: rgba(0, 0, 0, 0.562);
+}
+
+.topnav img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+/* Modal Styles */
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position:fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 60%; /* Center horizontally */
+    top: 50%; /* Center vertically */
+    transform: translate(-50%, -50%); /* Adjust to ensure exact centering */
+    width: 50%;
+    height: auto; /* Height based on content */
+    background-color: rgba(0, 0, 0, 0); /* Semi-transparent background */
+    justify-content: center;
+    align-items: center;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px; /* Limit width */
+    position: relative; /* For positioning the close button */
+}
+
+/* Title at the top */
+.modal-content h2 {
+    text-align: center; 
+    margin-top: 0;
+    font-size: 24px;
+    color: #1a69c3;
+}
+
+/* Input fields */
+.modal-content input[type="text"],
+.modal-content input[type="password"] {
+    text-decoration-color: #000000;
+    width: 75%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #000000; 
+}
+
+.modal-content input[type="text"]:focus,
+.modal-content input[type="password"]:focus {
+    text-decoration-color: #000000;
+    color: #000000;
+    outline: none;
+    border-color: #45a049; /* Focus state border color */
+}
+
+/* Submit button */
+
+.modal-content button {
+    width: 50%; /* Set the button width to 50% */
+    padding: 12px;
+    background-color: #4CAF50; /* Same as input fields */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block; /* Make the button block-level */
+    margin-left: auto; /* Align to the center */
+    margin-right: auto; /* Align to the center */
+    text-align: center; /* Center the button text */
+}
+
+.modal-content button:hover {
+    background-color: #3b763e;
+}
+
+/* Close button */
+.close {
+    color: #bd0e0e;
+    font-size: 36px;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    right: 10px; /* Close button positioned in top-right corner */
+    cursor: pointer;
+}
+
+/* Close button hover effect */
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content label {
+    color: black; /* Set label color to black */
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: block;
+}

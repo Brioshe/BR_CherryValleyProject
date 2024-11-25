@@ -1,0 +1,190 @@
+/*-- Site Structure --*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: black;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto 900px auto;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    grid-gap: 20px;
+}
+
+.grid-item {
+    padding: 1%;
+}
+
+.stuckheader {
+    background-color: rgba(42, 85, 52, 0.685);
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7%;
+    z-index: 99;
+}
+
+.topnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.topnav a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 600;
+    padding: 20px;
+    font-size: 17px;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.topnav a:hover {
+    background-color: rgba(0, 0, 0, 0.562);
+}
+
+.topnav img {
+    height: 80%;
+    width: auto;
+    margin-left: 20px;
+    outline: 5px solid green;
+    float: left;
+}
+
+/*- Fonts -*/
+
+@font-face {
+    font-family: AmaticSC;
+    src: url("media/fonts/AmaticSC-Bold.ttf");
+}
+
+.titletext {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row: 1;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5%;
+}
+
+.slogantext {
+    font-family: AmaticSC;
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    text-shadow: black 3px 3px 5px;
+}
+
+.gridbody {
+    grid-row: 2;
+    grid-column: 2;
+    margin-top: 5px;
+    z-index: 10;
+}
+
+.gridbody h1, h2, h3, h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 400;
+}
+
+.gridbody p, span, ul, hr, pre {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: lighter;
+    font-size: 21px;
+}
+
+.gridbodybg {
+    background-color: rgba(42, 85, 52, 0.685);
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-top: 5px;
+    z-index: 9;
+}
+
+.gridfooter {
+    background-color: white;
+    grid-row: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-top: 5px;
+}
+
+/*- Background -*/
+
+.bgcontainer {
+    transform: translateZ(-100px);
+}
+
+.background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -999;
+    filter: blur(5px);
+    transform: scale(1.05);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .topnav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 0;
+    }
+
+    .topnav img {
+        height: 50%;
+        margin-left: 10px;
+    }
+
+    .topnav a {
+        font-size: 14px;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .gridbody {
+        grid-column: 1;
+        margin-top: 10px;
+    }
+
+    .gridbodybg {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+}
+
+.about-page h1, .gallery-page h1, .donate-page h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+.about-page p, .gallery-page p, .donate-page p {
+    font-size: 18px;
+    text-align: justify;
+}

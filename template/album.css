@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.stuckheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.stuckheader img {
+    height: 40px;
+}
+
+.stuckheader a {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.stuckheader a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.album-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    padding: 16px;
+    justify-content: center;
+}
+
+.album-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.album-gallery img:hover {
+    transform: scale(1.05);
+}
