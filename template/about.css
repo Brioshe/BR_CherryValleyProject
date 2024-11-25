@@ -1,19 +1,27 @@
 /* about.css */
-body {
-    background-image: url("https://lh3.googleusercontent.com/pw/AP1GczNMb1pKgCd53o-EV35eoriTIEhBM3UXWdmcr4XwiKa_pnZB3iE95xjNi0dvIjSoDAQqZUvFS0liUmcwBeNDUfPDWvRaSVwVj4uhzTx56He17LX9Oim_RxDa1nCwZLp1LTm5SeVfV5lR6XERr6ZM7FSjuw=w1470-h827-s-no-gm?authuser=0");
-    background-size: 100% auto; /* Fit width and maintain the original aspect ratio for height */
-    background-position: center; /* Center the background */
-    background-repeat: no-repeat; /* Prevent repeating the background image */
-    display: flex; /* Use flexbox layout */
-    flex-direction: column; /* Stack items vertically */
-    justify-content: flex-start; /* Align content to the top */
-    align-items: center; /* Center horizontally */
-    color: white; /* Text color */
-    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-image:url(../media/IMG_2014.jpg);
 }
 
+body {
+    background-color: rgb(0, 0, 0);
+}
 
-/* Stuck header (top navigation bar) */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto 900px auto;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    grid-gap: 20px;
+}
+
+.grid-item {
+    padding: 1%;
+}
+
 .stuckheader {
     background-color: rgba(42, 85, 52, 0.685);
     padding: 0;
@@ -30,9 +38,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .topnav a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
     font-weight: 600;
     padding: 20px;
@@ -46,32 +56,89 @@ body {
 }
 
 .topnav img {
-    height: 100%;
+    height: 80%;
     width: auto;
-    margin-right: 20px;
+    margin-left: 20px;
+    outline: 5px solid green;
+    float: left;
 }
 
-/* Content Section */
-.content {
-    margin-top: 8%; /* Ensure content doesn't hide behind the fixed header */
-    padding: 20px;
-    text-align: center;
+.gridbody {
+    grid-row: 1;
+    grid-column: 2;
+    margin-top: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    z-index: 10;
+    padding-top: 10vh;
+    background-color: rgba(22, 60, 78, 0.685);
 }
 
-.content h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
+.gridbody h1, h2, h3, h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: 400;
 }
 
-.content p {
-    font-size: 18px;
-    text-align: justify;
-    margin: 0 20px;
+.gridbody p, span, ul, hr, pre {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    font-weight: lighter;
+    font-size: 21px;
 }
 
-/* Banner image */
-.banner-img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 20px;
+.gridbodybg {
+    background-color: rgba(42, 85, 52, 0.685);
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-top: 5px;
+    z-index: 9;
+}
+
+.gridfooter {
+    background-color: white;
+    grid-row: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-top: 5px;
+}
+
+/*- Background -*/
+
+.bgcontainer {
+    transform: translateZ(-100px);
+}
+
+@media (max-width: 768px) {
+    .topnav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 0;
+    }
+
+    .topnav img {
+        height: 50%;
+        margin-left: 10px;
+    }
+
+    .topnav a {
+        font-size: 14px;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+
+    .gridbody {
+        grid-column: 1;
+        margin-top: 10px;
+    }
+
+    .gridbodybg {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
 }
