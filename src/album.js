@@ -7,11 +7,12 @@ async function fetchImages() {
         const response = await fetch(`https://publicalbum.org/api/extract?url=${albumLink}`, {
             method: 'GET',
             headers: {
-                'Origin': 'http://172.0.0.1', // or 'http://127.0.0.1' if you're testing locally
+                // Adjust Origin header as needed for your local/production environment
+                'Origin': window.location.origin,
                 'X-Requested-With': 'XMLHttpRequest' // Standard header for Ajax requests
             }
         });
-        
+
         const text = await response.text(); // Read response as text
         console.log("Response Text:", text); // Log raw text
 
@@ -23,15 +24,17 @@ async function fetchImages() {
     }
 }
 
-
 // Populate the gallery dynamically
 async function populateAlbum() {
     const gallery = document.getElementById("album-gallery");
-    
+
     // Fetch image URLs from the Google Photos album
     const imageUrls = await fetchImages();
-    
+
     if (imageUrls && imageUrls.length > 0) {
+        // Clear any existing content
+        gallery.innerHTML = "";
+
         imageUrls.forEach(url => {
             const imgElement = document.createElement("img");
             imgElement.src = url;
@@ -40,7 +43,7 @@ async function populateAlbum() {
             gallery.appendChild(imgElement);
         });
     } else {
-        gallery.innerHTML = "No images available.";
+        gallery.innerHTML = "<p>No images available. Please check the album link.</p>";
     }
 }
 
