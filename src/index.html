@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../template/index.css">
+    <link rel="stylesheet" href="../template/footer.css">
     <title>Friends of Cherry Valley National Wildlife Refuge</title>
 </head>
 <body>
     <!-- Sticky header -->
     <div class="stuckheader topnav">
-        <img src="../media/logo.jpg" alt="Organization Logo">
+        <img src="https://lh3.googleusercontent.com/pw/AP1GczOnJUgjye6p4r5Z5rmCOCMW8g6KEjZ2mCx4UrvSBKRB1ziBBY0MZVSaf6TMO6pYKF85Cs9hckWbL0wjUZEk9omV3mfCoFtirMCULZ_iGpaeKx3s2vQI84bZLXQoteg4hGK_IjKubpN7p0PZPkTF8DzwmQ=w827-h827-s-no-gm?authuser=0" alt="Organization Logo">
         <nav>
             <a href="index.html" aria-label="Home">Home</a>
             <a href="about.html" aria-label="About Us">About Us</a>
@@ -87,5 +88,16 @@
             <p><a href="contact.html">Contact Us</a></p>
         </div>
     </div>
+
+        
+    <!-- Footer Placeholder -->
+    <div id="footer"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
 </body>
 </html>
