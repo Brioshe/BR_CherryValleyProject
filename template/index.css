@@ -14,7 +14,7 @@ body {
     display: grid;
     grid-template-columns: auto 900px auto;
     grid-template-rows: auto 1fr auto;
-    height: 100vh;
+    min-height: 100vh;
     grid-gap: 20px;
 }
 
@@ -67,7 +67,7 @@ body {
 
 @font-face {
     font-family: AmaticSC;
-    src: url("media/fonts/AmaticSC-Bold.ttf");
+    src: url("../media/fonts/AmaticSC-Bold.ttf");
 }
 
 .titletext {
@@ -78,6 +78,8 @@ body {
     justify-content: center;
     align-items: center;
     padding-bottom: 5%;
+    z-index:0;
+    height: 100vh;
 }
 
 .slogantext {
