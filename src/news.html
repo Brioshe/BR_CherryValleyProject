@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../template/index.css">
+    <link rel="stylesheet" href="../template/news.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <script>
+        function toggleArticle(id) {
+            const article = document.getElementById(id);
+            article.style.display = article.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+    <div class="stuckheader topnav">
+        <img src="../media/logo.jpg" alt="Organization Logo">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="news.html">News</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="donate.html">Donate</a>
+        <a class="login" href="login.html">Login</a>
+    </div>
+    
+    <div class="content">
+        <h1>News</h1>
+
+        <!-- News Article 1 -->
+        <button onclick="toggleArticle('article1')" aria-expanded="false">Toggle News 1</button>
+        <div id="article1" style="display:none;">
+            <h2>Exciting Updates About Cherry Valley</h2>
+            <p>Cherry Valley's conservation efforts have been making significant strides, and we're excited to share the latest news on our ongoing projects.</p>
+        </div>
+
+        <!-- News Article 2 -->
+        <button onclick="toggleArticle('article2')" aria-expanded="false">Toggle News 2</button>
+        <div id="article2" style="display:none;">
+            <h2>New Partnerships for Preservation</h2>
+            <p>We've partnered with local organizations to ensure the continued protection of our natural resources and to expand our outreach programs.</p>
+        </div>
+    </div>
+</body>
+</html>

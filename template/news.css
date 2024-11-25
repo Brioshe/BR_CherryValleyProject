@@ -1,0 +1,38 @@
+/* news.css */
+body {
+    background-image: url("https://lh3.googleusercontent.com/pw/AP1GczMw1-NNCOlXv_ATpQzVuWxXMxuDoMOpzdXI4av31GEfRr6MQ5u-a5hUiQ8sdDweAhwSEwjB3tB_KvlxtZwABya0s_pSGFglpm_KJyNEbfZ7a-SKDkKNzlWG1ZNchMMugu3Y4Kjas2faY3EmomRFARot9w=w1470-h827-s-no-gm?authuser=0");
+    background-size: 100% auto; /* Fit width and maintain the original aspect ratio for height */
+    background-position: center; /* Center the background */
+    background-repeat: no-repeat; /* Prevent repeating the background image */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align content to the top */
+    align-items: center; /* Center horizontally */
+    color: white; /* Text color */
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+}
+
+.news-container {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-container h1 {
+    text-align: center;
+    color: #4CAF50;
+}
+
+.news-content {
+    font-size: 1.1em;
+    line-height: 1.8em;
+    padding: 20px;
+}
+
+.news-footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

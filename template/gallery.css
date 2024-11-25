@@ -1,0 +1,111 @@
+/* gallery.css */
+
+/* Background setup for the entire body */
+body {
+    background-image: url("https://lh3.googleusercontent.com/pw/AP1GczMgEYnGq82GUNRAZ_M1mI-ICvZhODcvVrAjf5ZNAHM8e3l871lvJfCqq8yJoTU9FmbpYrvM_IdlrDnE5aMB-5tJslGuH81xieV8ybWL7J99Z1VO2MksmbI38VSWiK-HC9v4walD4aNvF_M6erjef-x9Cw=w1470-h827-s-no-gm?authuser=0");
+    background-size: 100% auto; /* Fit width and maintain the original aspect ratio for height */
+    background-position: center; /* Center the background */
+    background-repeat: no-repeat; /* Prevent repeating the background image */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: flex-start; /* Align content to the top */
+    align-items: center; /* Center horizontally */
+    color: white; /* Text color */
+    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+}
+
+/* Stuck header (top navigation bar) */
+.stuckheader {
+    background-color: rgba(42, 85, 52, 0.685);
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 7%;
+    z-index: 99;
+    }
+
+    .topnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    }
+
+    .topnav a {
+    color: white;
+    font-weight: 600;
+    padding: 20px;
+    font-size: 17px;
+    text-decoration: none;
+    margin: 10px;
+    }
+
+    .topnav a:hover {
+    background-color: rgba(0, 0, 0, 0.562);
+    }
+
+    .topnav img {
+    height: 100%;
+    width: auto;
+    margin-right: 20px;
+    }
+
+    /* Content Section */
+    .content {
+    margin-top: 8%; /* Ensures content doesn't hide behind the fixed header */
+    padding: 20px;
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+    }
+
+    /* Heading inside the content */
+    .content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    }
+
+    /* Gallery Section */
+    .gallery {
+    display:grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    place-items: center;
+    gap: 20px; /* Space between the albums */
+    justify-self: center; /* Centers the content horizontally */
+    justify-content: center;
+    margin-top: 20px;
+    width: 80%; /* Limits the gallery width for a cleaner look */
+    
+    }
+
+    /* Album item style */
+    .album {
+    text-decoration-color: black;
+    text-size-adjust: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+    }
+
+    .album-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    }
+
+    /* Hover effect on album images */
+    .album-img:hover {
+    transform: scale(1.25);
+    }
+
+    /* Album text style */
+    .album p {
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: 600;
+    }
