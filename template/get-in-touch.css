@@ -1,0 +1,144 @@
+body {
+    background-color: darkturquoise;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.contact-info {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-info h1 {
+    color: #333;
+}
+
+.contact-info iframe {
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+/* Modal: Ensure it displays over everything including the footer */
+/* Modal: Ensure it displays over everything including the footer */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2000; /* Higher z-index to overlay footer */
+    overflow: hidden; /* Prevent scroll */
+}
+
+/* Smaller Modal Content Styling */
+.modal-content {
+    background-color: #fff;
+    margin: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px; /* Smaller width */
+    width: 90%; /* Responsive width */
+    position: relative;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.3s ease-out; /* Smooth fade-in animation */
+}
+
+/* Modal Header */
+.modal h2 {
+    margin: 0 0 15px;
+    font-size: 20px; /* Smaller font size */
+    text-align: center;
+    color: #28a745;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Reduced gap for smaller form elements */
+}
+
+form label {
+    font-size: 14px; /* Smaller font for labels */
+    color: #333;
+}
+
+form input, form button {
+    padding: 8px; /* Reduced padding */
+    font-size: 14px; /* Smaller font */
+    margin-bottom: 10px; /* Reduced margin */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+/* Close button styling */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px; /* Smaller close button */
+    color: red;
+    cursor: pointer;
+}
+
+/* Floating "Sign Up" button: Oval design */
+.floating-button {
+    position: fixed;
+    top: 40px;
+    right: 20px;
+    padding: 10px 25px;
+    background-color: #5e72e4; /* Nice vibrant blue */
+    color: white;
+    border: none;
+    border-radius: 30px; /* Oval shape */
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.floating-button:hover {
+    background-color: #4e61d1; /* Slightly darker on hover */
+    transform: scale(1.05); /* Subtle hover effect */
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

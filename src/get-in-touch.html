@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get in Contact</title>
+    <link rel="stylesheet" href="../template/index.css">
+    <link rel="stylesheet" href="../template/footer.css">
+    <link rel="stylesheet" href="../template/get-in-touch.css">
+</head>
+<body>
+    <div class="stuckheader topnav">
+        <img src="https://lh3.googleusercontent.com/pw/AP1GczOnJUgjye6p4r5Z5rmCOCMW8g6KEjZ2mCx4UrvSBKRB1ziBBY0MZVSaf6TMO6pYKF85Cs9hckWbL0wjUZEk9omV3mfCoFtirMCULZ_iGpaeKx3s2vQI84bZLXQoteg4hGK_IjKubpN7p0PZPkTF8DzwmQ=w827-h827-s-no-gm?authuser=0" alt="Organization Logo">
+        <nav>
+            <a href="index.html" aria-label="Home">Home</a>
+            <a href="about.html" aria-label="About Us">About Us</a>
+            <a href="news.html" aria-label="News">News</a>
+            <a href="gallery.html" aria-label="Gallery">Gallery</a>
+            <a href="donate.html" aria-label="Donate">Donate</a>
+            <a class="login" href="login.html" aria-label="Login">Login</a>
+        </nav>
+    </div>
+    <main>
+        <section class="contact-info">
+            <h1>Get in Contact</h1>
+            <p><strong>Business Hours:</strong> Monday to Friday, 9:00 AM - 5:00 PM</p>
+            <p><strong>Email:</strong><a href="mailto:friendsofcherryvalley@gmail.com">friendsofcherryvalley@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+            <p><strong>Address: </strong><a href="https://www.google.com/maps?q=2138+Croasdale+Rd,+Stroudsburg,+PA+18360" target="_blank">2138 Croasdale Rd, Stroudsburg, PA 18360</a></p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3149.467501444214!2d-75.19784918468087!3d40.98650887939274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c34d9223b92ad5%3A0x5e028ba506084b57!2sCherry%20Valley%20National%20Wildlife%20Refuge%20Headquarters%2C%202138%20Croasdale%20Rd%2C%20Stroudsburg%2C%20PA%2018360!5e0!3m2!1sen!2sus!4v1699353123207!5m2!1sen!2sus"
+                width="100%" height="400" style="border:0; margin-bottom: 50px;" allowfullscreen="" loading="lazy">
+            </iframe>
+
+
+        </section>
+    </main>
+
+    <!-- Signup Modal -->
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Stay In Touch</h2>
+            <form method="post" action="" id="contactForm">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+                
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone (optional):</label>
+                <input type="tel" id="phone" name="phone">
+                
+                <button type="submit" value="submit" id="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Floating Signup Button -->
+    <button id="signupButton" class="floating-button">Sign Up</button>
+
+    <div id="footer"></div>
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            });
+    </script>
+    <script src="get-in-touch.js"></script>
+</body>
+</html>

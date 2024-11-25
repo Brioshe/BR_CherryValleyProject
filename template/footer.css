@@ -7,7 +7,7 @@
     left: 0; /* Aligns to the left edge */
     width: 100%; /* Full-width ribbon */
     padding: 10px 0; /* Vertical spacing inside the footer */
-    z-index: 9999; /* Ensures it stays above other elements */
+    z-index: 1999; /* Ensures it stays above other elements */
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
 }
 
