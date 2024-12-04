@@ -12,41 +12,6 @@ body {
     min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
 }
 
-/* Styling for the top navigation bar */
-.stuckheader {
-    background-color: rgba(42, 85, 52, 0.685);
-    padding: 0;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 99;
-}
-
-.topnav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-}
-
-.topnav a {
-    color: white;
-    padding: 15px;
-    font-size: 17px;
-    text-decoration: none;
-    margin: 10px;
-}
-
-.topnav a:hover {
-    background-color: rgba(0, 0, 0, 0.562);
-}
-
-.topnav img {
-    height: 50px;
-    margin-right: 20px;
-}
-
 /* Modal Styles */
 /* Modal Styles */
 .modal {

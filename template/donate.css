@@ -26,31 +26,6 @@ body {
     z-index: 99;
 }
 
-.topnav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.topnav a {
-    color: white;
-    font-weight: 600;
-    padding: 20px;
-    font-size: 17px;
-    text-decoration: none;
-    margin: 10px;
-}
-
-.topnav a:hover {
-    background-color: rgba(0, 0, 0, 0.562);
-}
-
-.topnav img {
-    height: 100%;
-    width: auto;
-    margin-right: 20px;
-}
-
 /* Content Section */
 .content {
     margin-top: 8%; /* Ensure content doesn't hide behind the fixed header */
