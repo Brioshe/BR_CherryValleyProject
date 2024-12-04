@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="../template/index.css">
     <link rel="stylesheet" href="../template/portal.css">
     <link rel="stylesheet" href="../template/footer.css">
+    <link rel="stylesheet" href="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal</title>
@@ -15,22 +16,106 @@
         <a href="about.html">About Us</a>
         <a href="news.html">News</a>
         <a href="gallery.html">Gallery</a>
+        <a class="Partners" href="partners.html" aria-label="Partners">Partners</a>
         <a href="donate.html">Donate</a>
         <a href="index.html">Logout</a>
     </div>
 
     <div class="content">
-        <h1>Welcome to Your Portal</h1>
-        <p>This is your personalized portal. You can manage your profile, view donations, and much more!</p>
+        
+        <h1 style="color: white;">Welcome To Your Portal</h1>
+        <!-- <p>This is your personalized portal. You can manage your profile, view donations, and much more!</p> -->
         
         <!-- Optional: Add more portal content here -->
         <div class="portal-info">
-            <h2>Your Information</h2>
-            <p>Username: <span id="usernameDisplay"></span></p>
+            <h2>Thank You for Supporting Our Cherry Valley!</h2>
+            <p>Vist our Social Media Pages or leave us a message</p>
+            <!-- <p>Username: <span id="usernameDisplay"></span></p> -->           
             <!-- Add more fields like donation history or settings if needed -->
         </div>
+        <div class=" container">
+
+            <div class="box-container">
+                
+    
+                <div class="box">
+                    <img src="data:image/jpeg;base64,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" alt="">
+                    <h3>Facebook</h3>
+
+                    <a href="https://www.facebook.com/friendsofcherryvalley/" class="btn" target="_blank">visit profile</a>
+                </div>
+    
+                <div class="box">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAQwAAAC8CAMAAAC672BgAAAAjVBMVEX/AAD/////6Oj/9fX/8fH/39//r6//h4f/ysr/Q0P/eXn/Zmb/s7P/6+v/f3//z8//mJj/p6f/oaH/bm7/Vlb/SEj/nJz/Xl7/vb3/PT3/e3v/Wlr/uLj/amr/Kyv/jIz/MjL/19f/UVH/Ghr/DQ3/Jib/4uL/w8P/kpL/MDD/iYn/Ojr/Jyf/U1P/FBTfoMloAAAHd0lEQVR4nO2dWZuiSgxAq0AWkUVEEFttBW3XHv//zxtEW0FZXJokLZyneZj7Ec51IFQlKcZ/H7FlCJIUWOrKH+uy3fO87nSrmJrjTDqdQT903XZ7uNt8fs3n+/1iwU4sFvv9fP71udkN223XDfuDTmfiOJqpKNO15/VsWR/7K9UKJGlptMQKAmcv/deisQxUX7e9qaJNRu7wiwHztXNHHU2Zerbuq8HSeE3RwzJakjq2u6bT3+2h7/w+9rt/E3Ntj1XJqErGUtW72miDfaeP8tnX1rK6/C0ZomWbIfY9vU5o2lbpv6FCGYbuLMqv83dYOHLhP518GWJvhh18Fcx6+T+QPBnSBDvq6phID8kQBtgBV8tIuF+Ggh1s9Sh3ygje6qGZxyK4R4aHHSYUXrmMDnaMcAzKZAyxI4RkWCxjhh0fLLMiGbX6XRwY5suo0fPih06ejNq8R5J42TIC7LhwCDJl1CLXumWRJaMGOXg2yq0MATsmPIQbGW/+nVrE4FqGhB0RJtKVjDdeyylnkpYhYseDi5iS0cMOB5deSsYMOxxcZkkZBnY02BgJGTp2MNjoCRkOdjDYOAkZ2LHgc5FR+0fG6aERy/CxQ8HHP8tYY4eCz/os4x92KPj0zzKwI6HAj4wWdiAUaJ1kWNiBUMA6ybCxA6GAfJJR29XPJMpJRh87EAqMTjJqukeQZn+SgR0HDY4yarxJkESIZTRv1hgrllH7lZ0jeiyjix0GDbxYhoYdBg0+YhlNmhEzimV8Y4dBg00sAzsKKjQyEhxkwOVcc7ArPYURyYAr5WrJYJd6hiCSsQK7WpTwmmAXexw1kgGXgB7KhQS6/W56JAOuGuFYO7Ui2gLKepGMLdjVfgrJiBaDTCMZcNn4uapOJLnRrUUy4Mr8Eo1hEsGS/U4kow12tVSXHL39XTeSAdfMf9UySG2H9zOSAXe16/7JFrGWDlQZnAefcFcvB1kG55QydM4Ad52z24zp7OeJDHCjIFsGF6iUhxgMsII+RwbnKo2Pe4kBNmPlyiCSoQdMhbtYgQwuElijVxncckahjChDh0uFc1ixMdzFimXgZ+hjBviiL5OBvbknM8BHV7kMLmJm6D0G2OZ8h4woQ5/BBXSFxwC/He+SgVgVsGaA2fCdMjjgSmSKLQNcvL9bBjdQNsNNBpjs3C+DcwshQ9cYYEPrIzIwSnUdBvgue0wG5x9wocV02AjuYo/K4EsXLriIAQPc7ntYBucryILdkAHKf0IG6OwblwF+Kz4lg4tgj/g220Fd6lkZUYYOFOOQAY4FflYG5zDrDBsGOB37eRmcTwHi+4IstHpFBjeq3yCfM8DSkZdkRBl61T/iPQN8kb8oo/IMHbQJ6WUZtAvkHuMXZEA8OmD4DRkB+obCL/G6jKorOv7SA7Ti9drFH3q1Vr7HtP8zSRdAfeD8j6TjIJWjX3/jQw1m22/DAKtTn5UBVW0+pL+4A9eH0Ca/7AeYgLvEF4RBKyNDBpjrPyzDgu0yHRDeRGpBf5N16G4vwtfZT6huPAOWmp3RaJYkSIAbGBdMisUqWF1bW4JlTGiHaazJFbiBbjWn8YiVPgIXIaTp0SqKxV38limVS2PPGBzTKaSvfMOslBWVFgsDsJwqD5VI8w3EJnspAYm2LCJj0yQGOHM8R0YwgwuhEIMBnmySKQOuZKsUEbvJl9IsPeSOZ+xGrDSoMlBz7wwiGXDrjGkZFJo3UxxGRsD970nJwM69b3GxxswQafhOMcAZQITTaFTGYQARXCb8I4POkIgUU4ShZURy71t64OPsAsASiAc5jLOD+4YXyI0cSqGCjsA0KOXetxxGYDZHZZ0wmrG5F5oZwgliGXSf76AcR20TWIqlwHEIO3RjMVGO4/nRNnpp4TVHelwYN4e9XLCaY4AuGM0BURf4UQbBVSd45icZTaLBLofKEV15gmV7kkFpdC0aPwdRNu9WdjmiFHDvmS4ib441PsN/ZDSvk/hl0hyFfuJyFDpgxR9VVmcZzfHf8eHfRxnNWb4LfpFBrVQCHC0hA6PvhxTjhIzap11iQgbgWUAkafOkjJp/q8kpGTXPyHlaRq3fJ9qVjFqvCgtXMjjJQ+9gcPi1jBqn5K0bGaRK2kHp8lsZdT0F/JtnyajpM1TIlFHPzEvm2TLqWKnxwfNk1G8xdMTzZXC6x1FXQsiLZNTrtzHixTLeaDBtKeb1vd/IqE9Vk35z67cyuDDDDhOCTUZjaYYMIsdCVksv674zZXDxzTOODzHztrNlRB+xSMd3QaC0cm46T0bE+C1fs6Nx/h0XyIhYTd9q2bw9XRXebrGMA0u/6wCOk62GndP1l6W3Wi7jiCip8lrrkzrHvZzPf9paXknZj8vnZVxoSZYvd7fawCW5GvTtjjSlK/uWlPeY/E0ZaURBslRft721ok0GYXsGONR9PxuGg4mmTD1b91VLEu79BVQlIwexZSwlKbBUdeWPdd22e153Pd0qpqk5zqTT6QxG/TB03XbMMOL4J9cNw/5oEP2FieNopqlsp+uu5/VsWR/7K1W1AklaGq1X7zqH/+Z1V+mosxymAAAAAElFTkSuQmCC" alt="">
+                    <h3>Youtube</h3>
+
+                    <a href="https://www.youtube.com/@friendsofcherryvalleynatio7219" class="btn" target="_blank">visit channel</a>
+            </div>    
+    
+            <div class="box">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" alt="">
+                <h3>Instagram</h3>
+                <a href="https://www.instagram.com/friendsofcherryvalley/" class="btn" target="_blank">visit profile</a>
+            </div>  
+        
+            <div class="box">
+                <img src="data:image/png;base64,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" alt="">
+                <h3>TikTok</h3>
+                <a href="https://www.tiktok.com/@friendsofcherryvalley?lang=en" class="btn" target="_blank">visit profile</a>
+    
+    
+        </div> 
+    
+    </div>
+    
+        </div>
+    
+        <!--contact-->
+        <section class="contact">
+    
+            <div class="container">
+    
+                <h4>keep in touch</h4>
+    
+                <div class="contact-wrapper">
+    
+                    <div class="contact-form">
+    
+                        <h5>Send us a message</h5>
+    
+                        <form>
+    
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Your Name">
+                            </div>
+    
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Your Email">
+                            </div>
+    
+                            <div class="form-group">
+                                <textarea name="message" placeholder="Your Message"></textarea>
+                            </div>
+                            <button type="submit">Send Message</button>
+                        </form>
+                    </div>
+    
+                    <div class="contact-info">
+                        <h4>Contact Information</h4>
+                        <p><i class="fas fa-phone"></i> (234) 567-890</p>
+                        <p><i class="fas fa-envelope"></i>  friendsofcherryvalley@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i>2138 Croasdale Rd, Stroudsburg, PA 18360</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
     </div>
 
+
+   
     
     <!-- Footer Placeholder -->
     <div id="footer"></div>
@@ -42,5 +127,6 @@
             });
     </script>
     <script src="portal.js"></script>
+
 </body>
 </html>
