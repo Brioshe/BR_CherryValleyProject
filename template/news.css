@@ -1,38 +1,74 @@
 /* news.css */
 body {
-    background-image: url("https://lh3.googleusercontent.com/pw/AP1GczMw1-NNCOlXv_ATpQzVuWxXMxuDoMOpzdXI4av31GEfRr6MQ5u-a5hUiQ8sdDweAhwSEwjB3tB_KvlxtZwABya0s_pSGFglpm_KJyNEbfZ7a-SKDkKNzlWG1ZNchMMugu3Y4Kjas2faY3EmomRFARot9w=w1470-h827-s-no-gm?authuser=0");
-    background-size: 100% auto; /* Fit width and maintain the original aspect ratio for height */
+    background-size: 100%; /* Fit width and maintain the original aspect ratio for height */
     background-position: center; /* Center the background */
     background-repeat: no-repeat; /* Prevent repeating the background image */
-    display: flex; /* Use flexbox layout */
-    flex-direction: column; /* Stack items vertically */
-    justify-content: flex-start; /* Align content to the top */
-    align-items: center; /* Center horizontally */
-    color: white; /* Text color */
-    min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
 }
 
-.news-container {
-    background-color: #fff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+.background-img {
+    position:fixed;
+    z-index: -10;
+    opacity: 0.4;
 }
 
-.news-container h1 {
-    text-align: center;
-    color: #4CAF50;
+/* Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: 5% 40% 5% 40% 5%;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    grid-gap: 20px;
+    width: 100%;
+    justify-content: center;
 }
 
-.news-content {
-    font-size: 1.1em;
-    line-height: 1.8em;
-    padding: 20px;
+.grid-item {
+    padding: 1%;
 }
 
-.news-footer {
-    background-color: #4CAF50;
+/* News Specific */
+
+.news-title {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-top: 20%;
+    padding:0;
+}
+
+.news-title h2 {
+    font-family: AmaticSC;
     color: white;
-    text-align: center;
-    padding: 20px;
+    font-size:100px;
+    padding:0;
+    margin:0;
+    text-align:center;
+}
+
+.news-column {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin-top:5%;
+    padding:10px;
+    background-color: rgba(42, 85, 52, 0.685);
+}
+
+.news-column-item {
+    background-color:rgba(38, 89, 50, 0.685);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:white;
+    width:fit-content;
+    height:fit-content;
+    padding:10px;
+    margin:0;
+
+}
+
+.calendar iframe {
+    width: 70vh;
+    height: 70vh;
+    top: 15vh;
+    left:55vw;
+    background-color: rgba(42, 85, 52, 0.685);
+    position:fixed;
+    z-index: 10;
 }
