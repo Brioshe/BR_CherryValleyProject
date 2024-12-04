@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="../template/index.css">
-    <link rel="stylesheet" href="../template/gallery.css">
-    <link rel="stylesheet" href="../template/footer.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
+    <link rel="stylesheet" href="../template/index.css">
+    <link rel="stylesheet" href="../template/gallery.css">
+    <link rel="stylesheet" href="../template/footer.css">
 </head>
 <body>
+    <!-- Original Header (Unchanged) -->
     <div class="stuckheader topnav">
         <img src="https://lh3.googleusercontent.com/pw/AP1GczOnJUgjye6p4r5Z5rmCOCMW8g6KEjZ2mCx4UrvSBKRB1ziBBY0MZVSaf6TMO6pYKF85Cs9hckWbL0wjUZEk9omV3mfCoFtirMCULZ_iGpaeKx3s2vQI84bZLXQoteg4hGK_IjKubpN7p0PZPkTF8DzwmQ=w827-h827-s-no-gm?authuser=0" alt="Logo">
         <a href="index.html">Home</a>
@@ -19,43 +20,17 @@
         <a class="login" href="login.html">Login</a>
     </div>
 
-    <div class="background-img">
-        <img src="https://lh3.googleusercontent.com/pw/AP1GczP3zn2IABiJhwemFBEzX0qmM8kXTCamS2wwXRbD2AvSlAinc2NZsLSDAxqSgamkTtRCYDTobgz07uvmUqUjE_DWSP8KA5mNmEsmITk1Aw6R3ltoCoYoya_0Avfr259AzEm8jz_AB7CPbIuEkfwJIl4l6g=w1835-h1033-s-no?authuser=1">
+    <!-- Main Content Area -->
+    <div id="app">
+        <!-- Dynamic content goes here -->
     </div>
 
-    <div class="content">
-        <h1>Gallery</h1>
-        <div class="gallery">
-            <!-- Album 1 -->
-            <div class="album">
-                <p>Wildlife</p>
-                <a href="album.html">
-                    <img src="https://lh3.googleusercontent.com/pw/AP1GczMPGufI31an8xMXlz--qu9QGClpFjktjy_i9UcF9laMKESeEbYFmfsoU4HXL6ChYFseGUHs2rIooLfLQwk-25vKLtQq9irvFc1H_iE9q2B83_rbMlLt7M_RPTK8jZCpM6VacosMAHarCoVZR0t2kzwiFQ=w1103-h827-s-no-gm?authuser=0" alt="Album 1" class="album-img">
-                </a>
-            </div>
-
-            <!-- Album 2 -->
-            <div class="album">
-                <p>Nature</p>
-                <a href="album.html">
-                    <img src="https://lh3.googleusercontent.com/pw/AP1GczMQWhK14uUfW19OmVLz3QSWGunYg9XlN7YmrHChua2gsAC-jZWaksLcpz4mYPmtk4RMV1Fxc_32KxmQwvrCt2KF5BWjYdHwsKc_LC8U62GubaWHmQpOBNqgYYdjZyTcsGV9v9_UiyDDyWI0_B6-KXTCuQ=w1470-h827-s-no-gm?authuser=0" alt="Album 2" class="album-img">
-                </a>
-            </div>
-
-            <!-- Album 3 -->
-            <div class="album">
-                <p>Events</p>
-                <a href="album.html">
-                    <img src="https://lh3.googleusercontent.com/pw/AP1GczNeBWbsZtiD4VkYvA08G9jO_D0USLUpsWqXDiVP4x_SONuq8crI9MV-FjF0yev3FJp2j1BRoDOn8X2oM_8qd-_Ik2gNFdn2sxAjbo-RnDMDIwN3mb4Bn896gI9QBGlNEJI5YMC45wFejpoJdl44_F-d6Q=w1103-h827-s-no-gm?authuser=0" alt="Album 3" class="album-img">
-                </a>
-            </div>
-        </div>
-    </div>
+    <!-- Floating Button (as per the original design) -->
     <div class="floating-button">
         <a href="get-in-touch.html">Get In Touch!</a>
-    </div> 
-        
-    <!-- Footer Placeholder -->
+    </div>
+
+    <!-- Footer Placeholder (Original Footer) -->
     <div id="footer"></div>
     <script>
         fetch('footer.html')
@@ -64,5 +39,7 @@
                 document.getElementById('footer').innerHTML = data;
             });
     </script>
+
+    <script src="gallery.js"></script>
 </body>
 </html>
