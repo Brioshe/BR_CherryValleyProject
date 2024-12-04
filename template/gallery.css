@@ -2,10 +2,6 @@
 
 /* Background setup for the entire body */
 body {
-    background-image: url("https://lh3.googleusercontent.com/pw/AP1GczMgEYnGq82GUNRAZ_M1mI-ICvZhODcvVrAjf5ZNAHM8e3l871lvJfCqq8yJoTU9FmbpYrvM_IdlrDnE5aMB-5tJslGuH81xieV8ybWL7J99Z1VO2MksmbI38VSWiK-HC9v4walD4aNvF_M6erjef-x9Cw=w1470-h827-s-no-gm?authuser=0");
-    background-size: 100% auto; /* Fit width and maintain the original aspect ratio for height */
-    background-position: center; /* Center the background */
-    background-repeat: no-repeat; /* Prevent repeating the background image */
     display: flex; /* Use flexbox layout */
     flex-direction: column; /* Stack items vertically */
     justify-content: flex-start; /* Align content to the top */
@@ -53,9 +49,16 @@ body {
     margin-right: 20px;
     }
 
+    .background-img {
+        position:fixed;
+        z-index: -10;
+        opacity: 0.6;
+        filter: blur(3px);
+    }
+
     /* Content Section */
     .content {
-    margin-top: 8%; /* Ensures content doesn't hide behind the fixed header */
+    margin-top: 1%; /* Ensures content doesn't hide behind the fixed header */
     padding: 20px;
     text-align: center;
     justify-items: center;
@@ -64,8 +67,9 @@ body {
 
     /* Heading inside the content */
     .content h1 {
-    font-size: 36px;
+    font-size: 100px;
     margin-bottom: 20px;
+    font-family: AmaticSC;
     }
 
     /* Gallery Section */
@@ -87,6 +91,7 @@ body {
     text-size-adjust: 35px;
     text-align: center;
     margin-bottom: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     .album-img {
